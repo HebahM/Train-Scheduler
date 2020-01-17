@@ -13,9 +13,64 @@
 </head>
 
 <body>
+    <!-- Jumbotron header -->
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid bg-dark text-light">
+            <div class="container">
+                <h1 class="display-4">Where's My Train?</h1>
+            </div>
+        </div>
 
 
 
+
+
+        <!-- Train Schedule appends here -->
+        <div class="card">
+            <h4 class="card-header bg-dark text-light">Current Train Schedule</h4>
+            <div class="card-body bg-light text-dark">
+                <table class="table table-sm table-hover" id="schedule">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Form to add train info goes header -->
+        <div class="card">
+            <h4 class="card-header bg-dark text-light">Add Train</h4>
+            <div class="card-body bg-light text-dark">
+                <form>
+                    Train Name <br>
+                    <input type="text">
+                    <br><br>
+                    Destination <br>
+                    <input type="text">
+                    <br><br>
+                    First Train Time (hh:mm - military time) <br>
+                    <input type="text">
+                    <br><br>
+                    Frequency (min) <br>
+                    <input type="text">
+                    <br><br>
+                    <button class="btn btn-dark">Submit</button>
+                </form>
+
+            </div>
+        </div>
+
+
+
+    </div>
     <script src="assets/javascript/logic.js"></script>
 </body>
 

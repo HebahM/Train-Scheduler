@@ -46,8 +46,21 @@ database.ref("Train Info").on("child_added", function(childSnapshot) {
     var destination = childSnapshot.val().destination;
     var frequency = childSnapshot.val().frequency;
     var firstTrain = childSnapshot.val().first;
-    console.log(trainName)
+    // console.log(trainName)
+
+    // calculate stuff
+    console.log(firstTrain)
+    var firstTimeConverted = moment(firstTrain, "HH:mm").subtract(1, "years");
+    console.log(firstTimeConverted);
+
 
     // create new table row. add train info to row. append row to table
-    var newTR = $("<>")
-})
+    var newRow = $("<tr>").append(
+        $("<td>").text(trainName),
+        $("<td>").text(destination),
+        $("<td>").text(frequency)
+      );
+    $("#schedule > tbody").append(newRow);
+});
+
+console.log(moment().format('LT'))

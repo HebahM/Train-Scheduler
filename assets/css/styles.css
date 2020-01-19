@@ -1,5 +1,6 @@
 h1 {
     text-align: center;
+    margin-top: 60px;
 }
 
 div.card {
@@ -8,4 +9,7 @@ div.card {
 
 input {
     width: 100%;
+}
+img {
+    opacity: .75
 }

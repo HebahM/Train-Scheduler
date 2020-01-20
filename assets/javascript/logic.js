@@ -1,9 +1,3 @@
-// To host your site with Firebase Hosting, you need the Firebase CLI (a command line tool).
-
-// Run the following npm command to install the CLI or update to the latest CLI version.
-
-// npm install -g firebase-tools
-
 var firebaseConfig = {
     apiKey: "AIzaSyCtmANKVpd54NQFKiWstwa10SkBUWgyNBM",
     authDomain: "train-scheduler-15c37.firebaseapp.com",
@@ -77,7 +71,10 @@ function createTable() {
 
 }
 
-$(document).ready(function(){createTable()});
+createTable();
 
 // refresh every minute
 setInterval(createTable, 60000);
+
+// New info is appending multiple times. It fixes after it refreshes. 
+// I only noticed this a few hours before the due date, and I can't find the cause.

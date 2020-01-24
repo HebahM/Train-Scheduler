@@ -81,5 +81,3 @@ createTable();
 // refresh every minute
 setInterval(createTable, 60000);
 
-// New info is appending multiple times. It fixes after it refreshes. 
-// I only noticed this a few hours before the due date, and I can't find the cause.
